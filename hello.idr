@@ -1,4 +1,7 @@
 -- Idris
 
+%foreign "C:add,libsmall"
+add : Int -> Int -> Int
+
 main : IO ()
-main = putStrLn "Hello"
+main = printLn $ add 20 30
